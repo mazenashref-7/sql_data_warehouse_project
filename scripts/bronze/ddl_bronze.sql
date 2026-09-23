@@ -1,7 +1,14 @@
--- =================================================
--- Creating Bronze Layer Tables
--- =================================================
+/*
+===============================================================================
+DDL Script: Create Bronze Tables
+===============================================================================
 
+Script Purpose:
+    This script creates tables in the 'bronze' schema, dropping existing tables
+    if they already exist.
+    Run this script to re-define the DDL structure of 'bronze' Tables
+===============================================================================
+*/
 
 -- Create Bronze CRM Customer Information Table
 IF OBJECT_ID ('bronze.crm_cust_info','U') IS NOT NULL
